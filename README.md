@@ -1,7 +1,7 @@
 # f1tv-upgrades
 
 - added buggy ass theater mode
-###install yes;
+### install yes;
 1. clone repo
 2. npm install [web-ext](https://www.npmjs.com/package/web-ext)
 3. web-ext build in repo root
