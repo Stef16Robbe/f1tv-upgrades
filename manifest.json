@@ -2,14 +2,11 @@
   "manifest_version": 2,
   "name": "f1tv upgrades",
   "version": "1.0",
-
   "description": "QOL upgrades to f1tv player",
-
   "content_scripts": [
     {
       "matches": ["*://f1tv.formula1.com/*"],
       "js": ["content.js"]
     }
   ]
-
 }

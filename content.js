@@ -3,14 +3,39 @@
 //     return new Promise(resolve => setTimeout(resolve, ms))
 // }
 // await sleep(3000)
-let isTheatreMode = false;
+
+//container-lg
+//- remove margin-left auto
+//
+//inset-video-item-container mt4
+//- add width 203, height 120
+//
+//col-xl-10 offset-xl-1
+//- remove margin-left 8.3333
+//
+//inset-video-item-image-container position-relative d-flex
+//- remove pos relative
+//
+
+let isTheaterMode = false;
 
 function toggleTheater() {
-    const className = "theater-mode";
-    const player = document.getElementById("main-embeddedPlayer");
-    isTheatreMode ? player.classList.remove(className) : player.classList.add(className);
+    const containerlg = document.getElementsByClassName("vod-detail-page")[0].firstChild;
+    const insetvideoitemcontainer = document.getElementsByClassName("inset-video-item-container")[0];
+    const offset = document.getElementsByClassName("col-xl-10 offset-xl-1")[0];
+    const viditemcontainer = document.getElementsByClassName("inset-video-item-image-container position-relative d-flex")[0];
 
-    isTheatreMode = !isTheatreMode;
+    if (!isTheaterMode) {
+        containerlg.style.marginLeft = "0"
+        insetvideoitemcontainer.style.width = "203%";
+        insetvideoitemcontainer.style.height = "120%";
+        offset.style.marginLeft = "0";
+        viditemcontainer.classList.remove("position-relative");
+    } else {
+        // fix it again lol
+    }
+
+    isTheaterMode = !isTheaterMode;
 }
 
 const fullscBtn = document.getElementById("bmpui-id-76");
