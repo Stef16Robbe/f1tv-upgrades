@@ -7,4 +7,4 @@
 3. web-ext build in repo root
 4. load locally:
 - chrome: load unpacked extension
-- firefox: idfk (https://stackoverflow.com/questions/68472808/cannot-install-own-developed-firefox-extension-through-manage-your-extension-b)
+- firefox: [idfk](https://stackoverflow.com/questions/68472808/cannot-install-own-developed-firefox-extension-through-manage-your-extension-b)
